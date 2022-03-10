@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16370" started-at="2022-03-10T18:45:26Z" finished-at="2022-03-10T18:45:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="16370" started-at="2022-03-10T18:45:26Z" finished-at="2022-03-10T18:45:43Z">
+      <class name="GraduationProject.Graduation_Project.Search">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:GraduationProject.Graduation_Project.Search@6d78f375]" name="beforeClass" is-config="true" duration-ms="2319" started-at="2022-03-11T01:45:26Z" finished-at="2022-03-11T01:45:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_Search_Author_Name()[pri:0, instance:GraduationProject.Graduation_Project.Search@6d78f375]" name="TC_01_Search_Author_Name" duration-ms="6633" started-at="2022-03-11T01:45:29Z" finished-at="2022-03-11T01:45:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Search_Author_Name -->
+        <test-method status="PASS" signature="TC_02_Search_Course_Name()[pri:0, instance:GraduationProject.Graduation_Project.Search@6d78f375]" name="TC_02_Search_Course_Name" duration-ms="3181" started-at="2022-03-11T01:45:35Z" finished-at="2022-03-11T01:45:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Search_Course_Name -->
+        <test-method status="PASS" signature="TC_03_Search_Empty_Name()[pri:0, instance:GraduationProject.Graduation_Project.Search@6d78f375]" name="TC_03_Search_Empty_Name" duration-ms="3136" started-at="2022-03-11T01:45:39Z" finished-at="2022-03-11T01:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Search_Empty_Name -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:GraduationProject.Graduation_Project.Search@6d78f375]" name="afterClass" is-config="true" duration-ms="1083" started-at="2022-03-11T01:45:42Z" finished-at="2022-03-11T01:45:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- GraduationProject.Graduation_Project.Search -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,100 +1,76 @@
 Feature: Register Function
 
   Scenario: Register with valid data
-    Given User is on alada website
-    And Verify manage website
-    When User enter <username>
-    And User enter <email>
-    And User enter again <email>
-    And User enter <password>
-    And User enter again <password>
-    And User enter <phone>
+    Given User is on register page
+    And Verify manage register page
+    When User fill out <firstname>
+    And User fill out <lastname>
+    And User fill out <email>
+    And User fill out <password>
     And User click on Register button
-    Then Message is displayed below
+    Then Message will be displayed 
+    
    
   Scenario: Register with empty data
-    Given User is on alada website
-    And Verify manage website
+    Given User is on register page
+    And Verify manage register page
     And User click on Register button
-    Then Message is displayed below
-   
-  Scenario: Register with empty username
-    Given User is on alada website
-    And Verify manage website
-    And User enter <email>
-    And User enter again <email>
-    And User enter <password>
-    And User enter again <password>
-    And User enter <phone>
+    Then Message will be displayed 
+    
+  Scenario: Register with empty firstname
+    Given User is on register page
+    And Verify manage register page
+    And User fill out <lastname>
+    And User fill out <email>
+    And User fill out <password>
     And User click on Register button
-    Then Message is displayed below
-   
-  Scenario: Register with invalid email
-    Given User is on alada website
-    And Verify manage website
-    When User enter <username>
-		And User enter invalid <email>
-    And User enter again <email>
-    And User enter <password>
-    And User enter again <password>
-    And User enter <phone>
+    Then Message will be displayed 
+    
+  Scenario: Register with empty lastname
+    Given User is on register page
+    And Verify manage register page
+    And User fill out <firstname>
+    And User fill out <email>
+    And User fill out <password>
     And User click on Register button
-  	Then Message is displayed below
-
-  Scenario: Register by enter email does not match
-    Given User is on alada website
-    And Verify manage website
-    When User enter <username>
-		And User enter <email>
-    And User enter again email does not match <email>
-    And User enter <password>
-    And User enter again <password>
-    And User enter <phone>
-    And User click on Register button
-    Then Message is displayed below
-   
+    Then Message will be displayed 
+    
   Scenario: Register with empty email
-    Given User is on alada website
-    And Verify manage website
-    When User enter <username>
-    And User enter again <email>
-    And User enter <password>
-    And User enter again <password>
-    And User enter <phone>
+    Given User is on register page
+    And Verify manage register page
+    And User fill out <firstname>
+    And User fill out <lastname>
+    And User fill out <password>
     And User click on Register button
-    Then Message is displayed below
-
-  Scenario: Register with enter again empty email
-    Given User is on alada website
-    And Verify manage website
-    When User enter <username>
-    And User enter <email>
-    And User enter <password>
-    And User enter again <password>
-    And User enter <phone>
-    And User click on Register button
-    Then Message is displayed below
-
+    Then Message will be displayed 
+    
   Scenario: Register with empty password
-    Given User is on alada website
-    And Verify manage website
-    When User enter <username>
-    And User enter <email>
-    And User enter again <email>
-    And User enter again <password>
-    And User enter <phone>
+    Given User is on register page
+    And Verify manage register page
+    And User fill out <firstname>
+    And User fill out <lastname>
+    And User fill out <email>
     And User click on Register button
-    Then Message is displayed below
-   
-  Scenario: Register with invalid password
-   	Given User is on alada website
-    And Verify manage website
-    When User enter <username>
-    And User enter <email>
-    And User enter again <email>
-    And User enter invalid <password>
-    And User enter again <password>
-    And User enter <phone>
+    Then Message will be displayed 
+    
+   Scenario: Register with invalid email
+    Given User is on register page
+    And Verify manage register page
+    And User fill out <firstname>
+    And User fill out <lastname>
+    And User fill out invalid <email>
+    And User fill out <password>
     And User click on Register button
-    Then Message is displayed below
+    Then Message will be displayed 
+    
+   Scenario: Register with invalid password
+    Given User is on register page
+    And Verify manage register page
+    And User fill out <firstname>
+    And User fill out <lastname>
+    And User fill out <email>
+    And User fill out invalid <password>
+    And User click on Register button
+    Then Message will be displayed 
+
   
